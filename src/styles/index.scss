@@ -1,0 +1,178 @@
+// Globals
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	transition: all 0.2s linear;
+}
+
+// Colors
+
+$orange: #f34601;
+$light-orange: #fcc87f;
+$blue: #2150a8;
+$light-blue: #899cbc;
+$tan: #f0e9d7;
+
+// Fonts
+
+@font-face {
+	font-family: "Cheap Pine Sans";
+	src: url("/CheapPineSans.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Lemon Milk";
+	src: url("/LemonMilkRegular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Lemon Milk";
+	src: url("/LemonMilkMedium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Lemon Milk";
+	src: url("/LemonMilkBold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+// Styling
+
+body {
+	background: $tan;
+}
+
+.centerer {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	@media only screen and (max-width: 768px) {
+		justify-content: center;
+	}
+}
+
+.splash {
+	position: relative;
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	padding: 40px;
+
+	@media only screen and (max-width: 431px) {
+		padding: 20px;
+	}
+
+	.splash-container {
+		position: relative;
+		width: 60%;
+		max-width: 60%;
+		height: auto;
+
+		@media only screen and (max-width: 1340px) {
+			width: 80%;
+			max-width: 80%;
+		}
+
+		@media only screen and (max-width: 900px) {
+			width: 100%;
+			max-width: 100%;
+		}
+
+		img {
+			width: 100%;
+			object-fit: contain;
+		}
+	}
+}
+
+.buttons {
+	position: relative;
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	padding: 40px;
+
+	@media only screen and (max-width: 431px) {
+		padding: 20px;
+	}
+
+	.buttons-container {
+		position: relative;
+		width: 60%;
+		max-width: 60%;
+		height: auto;
+		display: flex;
+		justify-content: space-around;
+
+		@media only screen and (max-width: 1340px) {
+			width: 80%;
+			max-width: 80%;
+		}
+
+		@media only screen and (max-width: 900px) {
+			width: 100%;
+			max-width: 100%;
+		}
+
+		@media only screen and (max-width: 768px) {
+			flex-direction: column;
+			row-gap: 40px;
+			align-items: center;
+		}
+
+		@media only screen and (max-width: 431px) {
+			row-gap: 20px;
+		}
+
+		a {
+			background: white;
+			border-radius: 15px;
+			padding: 20px;
+			width: 40%;
+			text-align: center;
+			color: white;
+			text-decoration: none;
+			font-family: "Lemon Milk", Arial, Helvetica, sans-serif;
+			font-weight: bold;
+			letter-spacing: 1.8px;
+
+			@media only screen and (max-width: 768px) {
+				width: 100%;
+			}
+		}
+
+		.blue-button {
+			background: $blue;
+
+			&:hover {
+				background: white;
+				color: $blue;
+			}
+		}
+
+		.orange-button {
+			background: $orange;
+
+			&:hover {
+				background: white;
+				color: $orange;
+			}
+		}
+	}
+}

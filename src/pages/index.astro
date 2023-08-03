@@ -1,15 +1,59 @@
 ---
+import "../styles/index.scss";
 ---
 
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta
+			name="description"
+			content="Whistlestop, the Rocket City BBQ Festival, raises funds allowing EarlyWorks to expand its offerings and service the community."
+		/>
+		<meta
+			name="keywords"
+			content="whistlestop, bbq, festival, rocket city, 2023, i3, october, midcity"
+		/>
+		<meta name="author" content="Bug-Boy" />
+		<meta name="robots" content="index, follow" />
+		<title>Whistlestop BBQ</title>
+		<meta property="og:image" content="Whistlestop-BBQ-Festival.png" />
+		<meta property="og:url" content="https://www.whistlestopweekend.com/" />
+		<meta
+			property="og:description"
+			content="Whistlestop, the Rocket City BBQ Festival, raises funds allowing EarlyWorks to expand its offerings and service the community."
+		/>
+		<meta property="og:locale" content="en_US" />
+
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<div class="centerer">
+			<section class="splash">
+				<div class="splash-container">
+					<img
+						src="Whistlestop-BBQ-Festival-Banner.png"
+						alt="Whistlestop BBQ Festival Banner"
+					/>
+				</div>
+			</section>
+			<section class="buttons">
+				<div class="buttons-container">
+					<a
+						class="blue-button"
+						href="https://www.ticketsignup.io/TicketEvent/whistlestopweekend2023/Register/SubEvent13564"
+						target="_blank"
+						rel="noopener noreferrer">VIP Registration</a
+					>
+					<a
+						class="orange-button"
+						href="https://www.ticketsignup.io/TicketEvent/whistlestopweekend2023/Register/SubEvent13563"
+						target="_blank"
+						rel="noopener noreferrer">BASIC Registration</a
+					>
+				</div>
+			</section>
+		</div>
 	</body>
 </html>
