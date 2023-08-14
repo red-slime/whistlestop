@@ -1,5 +1,6 @@
 ---
 import Splash from "../assets/Whistlestop-BBQ-Festival-Banner.png";
+import SplashMobile from "../assets/Whistlestop-BBQ-Festival-Banner-mobile.png";
 import "../styles/index.scss";
 ---
 
@@ -16,7 +17,7 @@ import "../styles/index.scss";
 			name="keywords"
 			content="whistlestop, bbq, festival, rocket city, 2023, i3, october, midcity"
 		/>
-		<meta name="author" content="Bug-Boy" />
+		<meta name="author" content="xaaane" />
 		<meta name="robots" content="index, follow" />
 		<title>Whistlestop BBQ Festival</title>
 		<meta property="og:image" content="Whistlestop-BBQ-Festival.png" />
@@ -38,7 +39,16 @@ import "../styles/index.scss";
 		<section class="whistlestop">
 			<div class="whistlestop-container">
 				<div class="splash-image-container">
-					<img src={Splash} alt="Whistlestop BBQ Festival Banner" />
+					<img
+						class="desktop-splash"
+						src={Splash}
+						alt="Whistlestop BBQ Festival Banner"
+					/>
+					<img
+						class="mobile-splash"
+						src={SplashMobile}
+						alt="Whistlestop BBQ Festival Banner"
+					/>
 				</div>
 				<div class="information-container-mobile">
 					<p>
@@ -54,7 +64,7 @@ import "../styles/index.scss";
 							href="WhistleStop Cooking Team FAQ 2023.pdf"
 							class="clear-button button"
 							rel="noreferrer noopener"
-							target="_blank">+ Show more info</a
+							target="_blank">Cooker FAQ</a
 						>
 						<a href="#ticket-container-id" class="clear-button button"
 							>Register Below
