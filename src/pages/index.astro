@@ -26,32 +26,145 @@ import "../styles/index.scss";
 			content="Whistlestop, the Rocket City BBQ Festival, raises funds allowing EarlyWorks to expand its offerings and service the community."
 		/>
 		<meta property="og:locale" content="en_US" />
-
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+			rel="stylesheet"
+		/>
 		<meta name="generator" content={Astro.generator} />
 	</head>
 	<body>
-		<div class="centerer">
-			<section class="splash">
-				<div class="splash-container">
+		<section class="whistlestop">
+			<div class="whistlestop-container">
+				<div class="splash-image-container">
 					<img src={Splash} alt="Whistlestop BBQ Festival Banner" />
 				</div>
-			</section>
-			<section class="buttons">
-				<div class="buttons-container">
-					<!-- <a
-						class="blue-button"
-						href="https://www.ticketsignup.io/TicketEvent/whistlestopweekend2023/Register/SubEvent13564"
-						target="_blank"
-						rel="noopener noreferrer">VIP Registration</a
-					> -->
-					<a
-						class="orange-button"
-						href="https://www.ticketsignup.io/TicketEvent/whistlestopweekend2023"
-						target="_blank"
-						rel="noopener noreferrer">Cooker Registration</a
-					>
+				<div class="ticket-container">
+					<div class="ticket vip">
+						<div class="price-and-type">
+							<h2 class="price">$1,000</h2>
+							<h2 class="type">VIP</h2>
+						</div>
+						<h2 class="team">Shadetree Team <br /> Registration</h2>
+						<span class="includes">Includes</span>
+						<ul class="vip-list">
+							<li>Four cook team wristbands</li>
+							<li>25x25 cook site <span>*ability to pre-select</span></li>
+							<li>Special WhistleStop Prize Pack 🎁</li>
+							<li>Access to water, ice, and electric</li>
+						</ul>
+						<a
+							class="button blue-button"
+							href="https://www.ticketsignup.io/TicketEvent/whistlestopweekend2023/Register/SubEvent13564"
+							target="_blank"
+							rel="noopener noreferrer">Learn More</a
+						>
+						<a
+							class="read-the-faq"
+							href="#"
+							target="_blank"
+							rel="noopener noreferrer">Read the Cooker FAQ</a
+						>
+					</div>
+					<div class="ticket basic">
+						<div class="price-and-type">
+							<h2 class="price">$275</h2>
+							<h2 class="type">Basic</h2>
+						</div>
+						<h2 class="team">Shadetree Team <br /> Registration</h2>
+						<span class="includes">Includes</span>
+						<ul class="basic-list">
+							<li>Four cook team wristbands</li>
+							<li>25x25 cook site <span>*no pre-select</span></li>
+							<li>Access to water, ice, and electric</li>
+							<li class="special-transparent">
+								Special WhistleStop Prize Pack 🎁
+							</li>
+						</ul>
+						<a
+							class="button orange-button"
+							href="https://www.ticketsignup.io/TicketEvent/whistlestopweekend2023/Register/SubEvent13564"
+							target="_blank"
+							rel="noopener noreferrer">Learn More</a
+						>
+						<a
+							class="read-the-faq"
+							href="#"
+							target="_blank"
+							rel="noopener noreferrer">Read the Cooker FAQ</a
+						>
+					</div>
 				</div>
-			</section>
-		</div>
+				<div class="information-container">
+					<h2>Whistlestop BBQ Festival 2023</h2>
+					<div class="information-text">
+						<article>
+							<p>
+								<strong>WhistleStop</strong>, the Rocket City BBQ Festival, has
+								been a beloved North Alabama tradition since 2001. As a primary
+								fundraising event for the EarlyWorks Children's Museum, the
+								festival raises funds allowing EarlyWorks to expand its
+								offerings and better serve the community over the years. After
+								announcing its end last year, we are excited to announce –
+								WHISTLESTOP IS BACK!
+								<br /><br />
+								Mark your calendars for <strong>October 20th & 21st</strong>,
+								when a reimagined version of WhistleStop returns for its 23rd
+								year. Locally headquartered Huntsville company, <strong
+									>Integration Innovation, Inc. (i3)</strong
+								>, takes over executive sponsorship and production of
+								WhistleStop for the benefit of EarlyWorks. The new home for
+								WhistleStop is the newly developed and popular <strong
+									>MidCity District</strong
+								>. In keeping with WhistleStop as a premier fundraiser for the
+								EarlyWorks Children's Museum, i3 is committed to producing a
+								first-class event for the community while raising money to
+								support the exciting new strategic initiative to ‘reimagine’ the
+								EarlyWorks Children's Museum.
+							</p>
+						</article>
+
+						<article>
+							<p>
+								EarlyWorks seeks to create a one-of-a-kind science and
+								museum-based experience providing incredible hands-on STEAM
+								experiences for the youngest learners in our North Alabama
+								community. The EarlyWorks plan calls for remodeling the current
+								museum into a state-of-the-art, professionally designed museum
+								offering STEAM-based play-and-learn spaces. "We Imagine an
+								EarlyWorks where children are busy in a lab-like setting,
+								tinkering and creating. Professionals guide the children as they
+								interact with high-tech tools, such as 3D printers, laser
+								cutters, and robotics, and open-ended imagining, testing, and
+								problem-solving are at the core of the children's efforts”,
+								stated EarlyWorks Executive Director Bart Williams. i3 CEO Rich
+								Kretzschmar shared, “We are excited to contribute to the
+								continued investment in growing our future generations’
+								curiosity in STEAM.”
+							</p>
+						</article>
+					</div>
+				</div>
+				<div class="footer">
+					<h3 class="questions">
+						<strong>Questions?</strong> Email us at <br
+							class="question-mobile-break"
+						/>
+						<a href="mailto:whistlestop@i3-corps.com" class="questions-email"
+							>whistlestop@i3-corps.com</a
+						>
+					</h3>
+					<a href="" class="facebook">
+						<div>
+							<h3>
+								<strong>FOLLOW US FOR UPDATES</strong>
+							</h3>
+							<img src="square-facebook.svg" alt="facebook-link-icon" />
+						</div>
+					</a>
+				</div>
+			</div>
+		</section>
 	</body>
 </html>
