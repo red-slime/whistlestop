@@ -57,7 +57,6 @@ html {
 
 body {
 	background: $tan;
-	overflow-x: hidden;
 	@media only screen and (max-width: 431px) {
 		background: white;
 	}
@@ -65,7 +64,7 @@ body {
 
 .whistlestop {
 	position: relative;
-	width: 100vw;
+	width: 100%;
 	height: auto;
 	padding: 40px;
 	@media only screen and (max-width: 431px) {
