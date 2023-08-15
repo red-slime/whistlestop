@@ -1,6 +1,7 @@
 ---
 import Splash from "../assets/Whistlestop-BBQ-Festival-Banner.png";
 import SplashMobile from "../assets/Whistlestop-BBQ-Festival-Banner-mobile.png";
+import Sparkle from "../assets/sparkle.svg";
 import "../styles/index.scss";
 ---
 
@@ -76,7 +77,10 @@ import "../styles/index.scss";
 						<div class="price-and-type">
 							<!-- <h2 class="price">$1,000</h2> -->
 							<h2 class="team">Shadetree Team <br /> Registration</h2>
-							<h2 class="type">VIP</h2>
+							<div class="type-container">
+								<img src={Sparkle} alt="star icon" class="sparkle" />
+								<h2 class="type">VIP</h2>
+							</div>
 						</div>
 						<!-- <h2 class="team">Shadetree Team <br /> Registration</h2> -->
 						<span class="includes">Includes</span>
@@ -104,7 +108,10 @@ import "../styles/index.scss";
 						<div class="price-and-type">
 							<!-- <h2 class="price">$275</h2> -->
 							<h2 class="team">Shadetree Team <br /> Registration</h2>
-							<h2 class="type">Basic</h2>
+							<div class="type-container">
+								<img src={Sparkle} alt="star icon" class="sparkle" />
+								<h2 class="type">BASIC</h2>
+							</div>
 						</div>
 						<!-- <h2 class="team">Shadetree Team <br /> Registration</h2> -->
 						<span class="includes">Includes</span>
