@@ -1,6 +1,8 @@
 ---
 import Logo from "../assets/whistlestop-logo.png";
+import LogoMobile from "../assets/whistlestop-logo-mobile.png";
 import FAQ from "../../public/WhistleStop Cooking Team FAQ 2023.pdf";
+import Map from "../assets/whistlestop-map.png";
 
 import Bluewood from "../assets/logos/bluewood-productions.svg";
 import CoH from "../assets/logos/city-of-huntsville.png";
@@ -55,6 +57,7 @@ import "../styles/index.scss";
 	<body>
 		<header>
 			<img src={Logo} id="logo" />
+			<img src={LogoMobile} id="mobile-logo" />
 			<h1>Live Music Lineup Announced Soon</h1>
 		</header>
 		<main>
@@ -269,6 +272,7 @@ import "../styles/index.scss";
 			<div id="schedule-container">
 				<div id="map">
 					<button id="map-button">View the Map</button>
+					<img src={Map} alt="Whistlestop Map" />
 				</div>
 				<div id="schedule-content">
 					<h2>Weekend Schedule</h2>
@@ -414,7 +418,7 @@ import "../styles/index.scss";
 
 				let scrollSpeed = 0.05;
 				let firstPos = 0;
-				let secondPos = -102;
+				let secondPos = -100;
 
 				const animateScroll = () => {
 					firstPos += scrollSpeed;
