@@ -586,7 +586,7 @@ main {
 				font-size: clamp(36px, 3vw, 3vw);
 
 				@include respond-to($tablet) {
-					font-size: clamp(30px, 4vw, 4vw);
+					font-size: clamp(30px, 5vw, 5vw);
 				}
 			}
 
@@ -617,7 +617,7 @@ main {
 						font-size: clamp(18px, 1vw, 1vw);
 
 						@include respond-to($tablet) {
-							font-size: clamp(20px, 5vw, 5vw);
+							font-size: clamp(20px, 3vw, 3vw);
 						}
 					}
 
@@ -629,7 +629,7 @@ main {
 						text-transform: uppercase;
 
 						@include respond-to($tablet) {
-							font-size: clamp(16px, 4vw, 4vw);
+							font-size: clamp(16px, 2.5vw, 3vw);
 						}
 					}
 				}
