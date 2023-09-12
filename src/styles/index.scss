@@ -728,9 +728,14 @@ footer {
 			display: flex;
 			align-items: center;
 			gap: 1vw;
+			text-decoration: none;
 			cursor: pointer;
 
 			@include respond-to($tablet) {
+				gap: 2vw;
+			}
+
+			@include respond-to($mobile) {
 				gap: 4vw;
 			}
 
