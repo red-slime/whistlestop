@@ -473,7 +473,7 @@ main {
 		margin: 0 auto;
 		display: flex;
 		flex-direction: row;
-		align-items: flex-start;
+		align-items: center;
 		gap: 3vw;
 
 		@include respond-to(1200px) {
@@ -495,9 +495,13 @@ main {
 			position: relative;
 			width: 35%;
 			border-radius: 15px;
-			overflow: hidden;
-			transition: width 0.2s linear;
-			align-self: stretch;
+			background-image: url(../assets/whistlestop-map.png);
+			background-position: 35% 0%;
+			background-size: 900px;
+			background-repeat: no-repeat;
+			padding: 50px;
+			height: clamp(666px, 50vw, 50vw);
+			max-height: 666px;
 
 			@include respond-to($tablet) {
 				border-radius: 0;
@@ -515,10 +519,10 @@ main {
 				display: flex;
 				justify-content: center;
 				align-items: flex-start;
-				transition: width 0.2s linear;
 
 				#map-button {
-					width: 50%;
+					width: auto;
+					padding: 1vw;
 					background: $black;
 					&:hover {
 						background: $orange;
@@ -527,19 +531,17 @@ main {
 			}
 
 			img {
-				height: 100%;
-				width: 100%;
-				object-fit: cover;
-				object-position: 30% 0;
+				display: none;
+
+				@include respond-to($tablet) {
+					display: block;
+					width: 100%;
+					height: auto;
+				}
 			}
 
 			#map-button {
-				position: absolute;
-				top: 40px;
-				left: 50%;
-				transform: translateX(-50%);
-				width: 80%;
-
+				width: 100%;
 				font-family: $milk;
 				color: white;
 				background: $orange;
@@ -563,9 +565,6 @@ main {
 			display: flex;
 			flex-direction: column;
 			gap: 3vw;
-			opacity: 1;
-			transition: opacity 0.2s linear;
-			will-change: opacity;
 
 			@include respond-to(1200px) {
 				gap: 4vw;
@@ -578,12 +577,7 @@ main {
 			}
 
 			&.shrink {
-				width: 0;
-				height: 0;
-				overflow: hidden;
-				opacity: 0;
-				transition: opacity 0.2s linear;
-				will-change: opacity;
+				display: none;
 			}
 
 			h2 {
