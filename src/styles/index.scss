@@ -697,6 +697,10 @@ footer {
 			width: clamp(calc(320px - 40px), 100%, 100%);
 			flex-direction: column;
 			text-align: center;
+			gap: 4vw;
+		}
+
+		@include respond-to($mobile) {
 			gap: 8vw;
 		}
 
