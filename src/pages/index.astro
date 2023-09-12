@@ -421,20 +421,20 @@ import "../styles/index.scss";
 				const firstCopy = document.getElementById("first-copy");
 				const secondCopy = document.getElementById("second-copy");
 
-				let scrollSpeed = -0.05;
-				let firstPos = 100;
-				let secondPos = 0;
+				let scrollSpeed = 0.05;
+				let firstPos = 0;
+				let secondPos = -100;
 
 				const animateScroll = () => {
 					firstPos += scrollSpeed;
 					secondPos += scrollSpeed;
 
-					if (firstPos <= -100) {
-						firstPos = secondPos + 100;
+					if (firstPos >= 100) {
+						firstPos = secondPos - 100;
 					}
 
-					if (secondPos <= -100) {
-						secondPos = firstPos + 100;
+					if (secondPos >= 100) {
+						secondPos = firstPos - 100;
 					}
 
 					firstCopy.style.transform = `translateX(${firstPos}%)`;
