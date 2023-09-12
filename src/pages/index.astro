@@ -1,7 +1,20 @@
 ---
-import Splash from "../assets/Whistlestop-BBQ-Festival-Banner.png";
-import SplashMobile from "../assets/Whistlestop-BBQ-Festival-Banner-mobile.png";
-import Sparkle from "../assets/sparkle.svg";
+import Logo from "../assets/whistlestop-logo.png";
+import FAQ from "../../public/WhistleStop Cooking Team FAQ 2023.pdf";
+
+import Bluewood from "../assets/logos/bluewood-productions.svg";
+import CoH from "../assets/logos/city-of-huntsville.png";
+import CvB from "../assets/logos/cvb.jpg";
+import EarlyWorks from "../assets/logos/early-works-childrens-museum.png";
+import HmO from "../assets/logos/huntsville-music-office.png";
+import i3 from "../assets/logos/i3-logo.png";
+import Jacobs from "../assets/logos/jacobs.png";
+import MidCity from "../assets/logos/mid-city.png";
+import Octo from "../assets/logos/octo-hospitality.png";
+import Redstone from "../assets/logos/redstone-federal-credit-union.png";
+import Torch from "../assets/logos/torch-technologies.png";
+import Window from "../assets/logos/window-world.jpg";
+
 import "../styles/index.scss";
 ---
 
@@ -31,186 +44,403 @@ import "../styles/index.scss";
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap"
 			rel="stylesheet"
 		/>
+		<script
+			src="https://kit.fontawesome.com/45047b1d9e.js"
+			crossorigin="anonymous"></script>
 		<meta name="generator" content={Astro.generator} />
 	</head>
 	<body>
-		<section class="whistlestop">
-			<div class="whistlestop-container">
-				<div class="splash-image-container">
-					<img
-						class="desktop-splash"
-						src={Splash}
-						alt="Whistlestop BBQ Festival Banner"
-					/>
-					<img
-						class="mobile-splash"
-						src={SplashMobile}
-						alt="Whistlestop BBQ Festival Banner"
-					/>
+		<header>
+			<img src={Logo} id="logo" />
+			<h1>Live Music Lineup Announced Soon</h1>
+		</header>
+		<main>
+			<div id="main-container">
+				<div id="main-content">
+					<div class="main-content-item">
+						<div class="main-content-item-heading blue">
+							<h2>Taste of Whistlestop</h2>
+							<i class="fa-sharp fa-solid fa-sparkle"></i>
+						</div>
+						<div class="main-content-item-text">
+							<ul>
+								<li>
+									Come enjoy a taste of WhistleStop. This special pass will get
+									you a taste of all 10 of our food vendors
+								</li>
+								<li>2 Day admission into the festival</li>
+								<li>
+									People’s Choice pulled pork tasting on Saturday from 4:00 pm
+									to 6:00 pm
+								</li>
+								<li>
+									Access to live music, market vendors, kids’ area, and
+									food/drink vendors
+								</li>
+							</ul>
+						</div>
+						<a
+							class="main-content-item-button"
+							href="https://www.ticketsignup.io/TicketEvent/whistlestopweekend2023"
+							target="_blank"
+							rel="”noopener"
+							noreferrer”><b>Purchase Pass</b> $125</a
+						>
+					</div>
+					<div class="main-content-item">
+						<div class="main-content-item-heading blue">
+							<h2>Weekend Pass</h2>
+							<i class="fa-sharp fa-solid fa-sparkle"></i>
+						</div>
+						<div class="main-content-item-text">
+							<ul>
+								<li>2 Day admission into the festival</li>
+								<li>
+									People’s Choice pulled pork tasting on Saturday from 4:00 pm
+									to 6:00 pm
+								</li>
+								<li>
+									Access to live music, market vendors, kids’ area, and
+									food/drink vendors
+								</li>
+							</ul>
+						</div>
+						<a
+							class="main-content-item-button"
+							href="https://www.ticketsignup.io/TicketEvent/whistlestopweekend2023"
+							target="_blank"
+							rel="”noopener"
+							noreferrer”><b>Purchase Pass</b> $35</a
+						>
+					</div>
+					<div class="main-content-item">
+						<div class="main-content-item-heading red">
+							<h2>Friday Ticket</h2>
+							<i class="fa-sharp fa-solid fa-sparkle"></i>
+						</div>
+						<div class="main-content-item-text">
+							<ul>
+								<li>Single Day - Friday admission only</li>
+								<li>
+									Access to live music, market vendors, kids’ area, and
+									food/drink vendors
+								</li>
+							</ul>
+						</div>
+						<a
+							class="main-content-item-button"
+							href="https://www.ticketsignup.io/TicketEvent/whistlestopweekend2023"
+							target="_blank"
+							rel="”noopener"
+							noreferrer”><b>Purchase Ticket</b> $15</a
+						>
+					</div>
+					<div class="main-content-item">
+						<div class="main-content-item-heading red">
+							<h2>Saturday Ticket</h2>
+							<i class="fa-sharp fa-solid fa-sparkle"></i>
+						</div>
+						<div class="main-content-item-text">
+							<ul>
+								<li>Single Day - Saturday admission only</li>
+								<li>
+									People’s Choice pulled pork tasting on Saturday from 4:00 pm
+									to 6:00 pm
+								</li>
+								<li>
+									Access to live music, market vendors, kids’ area, and
+									food/drink vendors
+								</li>
+							</ul>
+						</div>
+						<a
+							class="main-content-item-button"
+							href="https://www.ticketsignup.io/TicketEvent/whistlestopweekend2023"
+							target="_blank"
+							rel="”noopener"
+							noreferrer”><b>Purchase Ticket</b> $25</a
+						>
+					</div>
+					<div class="main-content-item">
+						<div class="main-content-item-heading orange">
+							<h2>Team Registration</h2>
+							<i class="fa-sharp fa-solid fa-sparkle"></i>
+						</div>
+						<div class="main-content-item-text">
+							<ul>
+								<li>Four cook team wristbands</li>
+								<li>25x25 cook site *no pre-select</li>
+								<li>Access to water, ice, and electric</li>
+								<li>
+									<a href={FAQ} target="_blank" rel="noreferrer nofollow"
+										>Read Cooker FAQ</a
+									>
+								</li>
+							</ul>
+						</div>
+						<a
+							class="main-content-item-button"
+							href="https://www.ticketsignup.io/TicketEvent/whistlestopweekend2023"
+							target="_blank"
+							rel="”noopener"
+							noreferrer”><b>Join Waitlist</b> $275</a
+						>
+					</div>
 				</div>
-				<div class="information-container-mobile">
+				<span class="disclaimer"
+					>*Tickets will be available at the gate at an increased rate (card
+					only - no cash accepted)</span
+				>
+			</div>
+		</main>
+		<section id="secondary-content">
+			<div id="secondary-content-container">
+				<article>
 					<p>
-						<strong>WhistleStop</strong>, the Rocket City BBQ Festival, has been
-						a beloved North Alabama tradition since 2001. As a primary
-						fundraising event for the EarlyWorks Children's Museum, the festival
-						raises funds allowing EarlyWorks to expand its offerings and better
-						serve the community over the years. After announcing its end last
-						year, we are excited to announce – WHISTLESTOP IS BACK!
+						<b>WhistleStop</b>, the Rocket City BBQ Festival, has been a beloved
+						North Alabama tradition since 2001. As a primary fundraising event
+						for the EarlyWorks Children's Museum, the festival raises funds
+						allowing EarlyWorks to expand its offerings and better serve the
+						community over the years. After announcing its end last year, we are
+						excited to announce - WHISTLESTOP IS <b>BACK!</b>
 					</p>
-					<div class="info-con-mobile-btn">
-						<a
-							href="WhistleStop Cooking Team FAQ 2023.pdf"
-							class="clear-button button"
-							rel="noreferrer noopener"
-							target="_blank">Cooker FAQ</a
-						>
-						<a href="#ticket-container-id" class="clear-button button"
-							>Register Below
-						</a>
-					</div>
-				</div>
-				<div class="ticket-container" id="ticket-container-id">
-					<div class="ticket vip">
-						<div class="price-and-type">
-							<!-- <h2 class="price">$1,000</h2> -->
-							<h2 class="team">Shadetree Team <br /> Registration</h2>
-							<div class="type-container">
-								<img src={Sparkle} alt="star icon" class="sparkle" />
-								<h2 class="type">VIP</h2>
-							</div>
+					<br />
+					<p>
+						<b>MidCity District</b> and locally headquartered Huntsville company,
+						<b>Integration Innovation, Inc. (i3)</b>, have joined forces to make
+						sure that WhistleStop is here to stay and comes back better than
+						EVER! We have expanded the festival grounds including 10+ local food
+						vendors offering unique options to excite your taste buds, signature
+						WhistleStop cocktails & cold beers, snack vendors such as kettle
+						corn and hot boiled peanuts, a tailgate zone to watch your favorite
+						football team, a kid zone for the little ones to run around, curated
+						market vendors, and a main stage with some INCREDIBLE music starting
+						Friday at 4pm and all day and night Saturday!
+					</p>
+				</article>
+				<div id="vendors">
+					<div id="food-vendors">
+						<div class="vendor-heading">
+							<h3>Food Vendors<span>*</span></h3>
+							<div class="line"></div>
 						</div>
-						<!-- <h2 class="team">Shadetree Team <br /> Registration</h2> -->
-						<span class="includes">Includes</span>
-						<ul class="vip-list">
-							<li>Four cook team wristbands</li>
-							<li>25x25 cook site <strong>*ability to pre-select</strong></li>
-							<li>Special WhistleStop Prize Pack 🎁</li>
-							<li>Access to water, ice, and electric</li>
+						<ul class="vendor-items">
+							<li class="tasting">Phat Sammy's</li>
+							<li class="tasting">Goodland Pourhouse</li>
+							<li class="tasting">Fusion BBQ</li>
+							<li class="tasting">Blue Oak BBQ</li>
+							<li class="tasting">The Standard Social Market</li>
+							<li class="tasting">Jac's BBQ</li>
+							<li class="tasting">Long's Craft BBQ</li>
+							<li class="tasting">Tamarind Island Grill</li>
+							<li class="tasting">The Camp</li>
+							<li>Nannys Lemonade</li>
+							<li>Hustle & Pop</li>
+							<li>Happy Pappi</li>
+							<li>and more</li>
 						</ul>
-						<a
-							class="button blue-button"
-							href="https://www.ticketsignup.io/TicketEvent/whistlestopweekend2023"
-							target="_blank"
-							rel="noopener noreferrer">Learn More</a
-						>
-						<a
-							class="read-the-faq"
-							href="WhistleStop Cooking Team FAQ 2023.pdf"
-							target="_blank"
-							rel="noopener noreferrer">Read the Cooker FAQ</a
-						>
-						<p class="mobile-limited">*Limited Amount Available*</p>
 					</div>
-					<div class="ticket basic">
-						<div class="price-and-type">
-							<!-- <h2 class="price">$275</h2> -->
-							<h2 class="team">Shadetree Team <br /> Registration</h2>
-							<div class="type-container">
-								<img src={Sparkle} alt="star icon" class="sparkle" />
-								<h2 class="type">BASIC</h2>
-							</div>
+					<div id="market-vendors">
+						<div class="vendor-heading">
+							<h3>Market Vendors</h3>
+							<div class="line"></div>
 						</div>
-						<!-- <h2 class="team">Shadetree Team <br /> Registration</h2> -->
-						<span class="includes">Includes</span>
-						<ul class="basic-list">
-							<li>Four cook team wristbands</li>
-							<li>25x25 cook site <strong>*no pre-select</strong></li>
-							<li>Access to water, ice, and electric</li>
-							<li class="special-transparent">
-								Special WhistleStop Prize Pack 🎁
-							</li>
+						<ul class="vendor-items">
+							<li>Fortenberry Farms</li>
+							<li>Furry Hippie Beard Co.</li>
+							<li>Backwoods Market Garden</li>
+							<li>Toasted Pineapple</li>
+							<li>Luna Moth</li>
+							<li>Scott Honey Farms 7 Organics</li>
+							<li>Pitmaster BBQ Supply</li>
+							<li>and more</li>
 						</ul>
-						<a
-							class="button orange-button"
-							href="https://www.ticketsignup.io/TicketEvent/whistlestopweekend2023"
-							target="_blank"
-							rel="noopener noreferrer">Learn More</a
-						>
-						<a
-							class="read-the-faq"
-							href="WhistleStop Cooking Team FAQ 2023.pdf"
-							target="_blank"
-							rel="noopener noreferrer">Read the Cooker FAQ</a
-						>
 					</div>
-				</div>
-				<div class="information-container">
-					<h2>Whistlestop BBQ Festival 2023</h2>
-					<div class="information-text">
-						<article>
-							<p>
-								<strong>WhistleStop</strong>, the Rocket City BBQ Festival, has
-								been a beloved North Alabama tradition since 2001. As a primary
-								fundraising event for the EarlyWorks Children's Museum, the
-								festival raises funds allowing EarlyWorks to expand its
-								offerings and better serve the community over the years. After
-								announcing its end last year, we are excited to announce –
-								WHISTLESTOP IS BACK!
-								<br /><br />
-								Mark your calendars for <strong>October 20th & 21st</strong>,
-								when a reimagined version of WhistleStop returns for its 23rd
-								year. Locally headquartered Huntsville company, <strong
-									>Integration Innovation, Inc. (i3)</strong
-								>, takes over executive sponsorship and production of
-								WhistleStop for the benefit of EarlyWorks. The new home for
-								WhistleStop is the newly developed and popular <strong
-									>MidCity District</strong
-								>. In keeping with WhistleStop as a premier fundraiser for the
-								EarlyWorks Children's Museum, i3 is committed to producing a
-								first-class event for the community while raising money to
-								support the exciting new strategic initiative to ‘reimagine’ the
-								EarlyWorks Children's Museum.
-							</p>
-						</article>
-
-						<article>
-							<p>
-								EarlyWorks seeks to create a one-of-a-kind science and
-								museum-based experience providing incredible hands-on STEAM
-								experiences for the youngest learners in our North Alabama
-								community. The EarlyWorks plan calls for remodeling the current
-								museum into a state-of-the-art, professionally designed museum
-								offering STEAM-based play-and-learn spaces. "We Imagine an
-								EarlyWorks where children are busy in a lab-like setting,
-								tinkering and creating. Professionals guide the children as they
-								interact with high-tech tools, such as 3D printers, laser
-								cutters, and robotics, and open-ended imagining, testing, and
-								problem-solving are at the core of the children's efforts”,
-								stated EarlyWorks Executive Director Bart Williams. i3 CEO Rich
-								Kretzschmar shared, “We are excited to contribute to the
-								continued investment in growing our future generations’
-								curiosity in STEAM.”
-							</p>
-						</article>
-					</div>
-				</div>
-				<div class="footer">
-					<h3 class="questions">
-						<strong>Questions?</strong> Email us at <br
-							class="question-mobile-break"
-						/>
-						<a href="mailto:whistlestop@i3-corps.com" class="questions-email"
-							>whistlestop@i3-corps.com</a
-						>
-					</h3>
-					<a
-						href="https://www.facebook.com/WhistleStopWeekend/"
-						class="facebook"
-						rel="noreferrer noopener"
-						target="_blank"
+					<span class="disclaimer"
+						>*Vendors in orange are part of the Tasting Ticket experience</span
 					>
-						<div>
-							<h3>
-								<strong>FOLLOW US FOR UPDATES</strong>
-							</h3>
-							<img src="square-facebook.svg" alt="facebook-link-icon" />
-						</div>
-					</a>
 				</div>
 			</div>
 		</section>
+		<section id="schedule">
+			<div id="schedule-container">
+				<div id="map">
+					<button id="map-button">View the Map</button>
+				</div>
+				<div id="schedule-content">
+					<h2>Weekend Schedule</h2>
+					<div class="schedule-block">
+						<div class="schedule-times">
+							<h3>
+								Oct 20 <i class="fa-sharp fa-solid fa-sparkle"></i> Friday
+							</h3>
+							<span>Gates Open at 4:00 PM</span>
+						</div>
+						<ul class="event-times">
+							<li>
+								<p>4:00 pm</p>
+								<p>Live Music Begins</p>
+							</li>
+							<li>
+								<p>11:00 pm</p>
+								<p>Festival Ends</p>
+							</li>
+						</ul>
+					</div>
+					<div class="schedule-block">
+						<div class="schedule-times">
+							<h3>
+								Oct 21 <i class="fa-sharp fa-solid fa-sparkle"></i> Saturday
+							</h3>
+							<span>Gates Open at 11:00 AM</span>
+						</div>
+						<ul class="event-times">
+							<li class="heavy">
+								<p>11:00 am</p>
+								<p>BBQ Competition Begins</p>
+							</li>
+							<li>
+								<p>11:00 am</p>
+								<p>Live Music Begins</p>
+							</li>
+							<li class="heavy">
+								<p>4:00 pm</p>
+								<p>People's Choice</p>
+							</li>
+							<li class="heavy">
+								<p>7:30 pm</p>
+								<p>BBQ Competition Announcements & Awards</p>
+							</li>
+							<li>
+								<p>11:00 pm</p>
+								<p>Festival Ends</p>
+							</li>
+						</ul>
+					</div>
+					<span class="disclaimer">*Schedule is subject to change</span>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div id="contact">
+				<h3 id="questions">
+					<b>Questions?</b> Email us at <a
+						href="mailto:whistlestop@i3-corps.com">whistlestop@i3-corps.com</a
+					>
+				</h3>
+				<a id="follow" role="button">
+					Follow Us for Updates <i class="fa-brands fa-square-facebook"></i>
+				</a>
+			</div>
+		</footer>
+		<section id="sponsors">
+			<div id="sponsors-container">
+				<div id="first-copy" class="logo-container">
+					<img src={Bluewood} alt="Bluewood Productions Logo" />
+					<img src={CoH} alt="City of Huntsville Logo" />
+					<img src={CvB} alt="CVB Logo" />
+					<img src={EarlyWorks} alt="Early Works Children's Museum Logo" />
+					<img src={HmO} alt="Huntsville Music Office Logo" />
+					<img src={i3} alt="i3 Logo" />
+					<img src={Jacobs} alt="Jacobs Logo" />
+					<img src={MidCity} alt="MidCity District Logo" />
+					<img src={Octo} alt="Octo Hospitality" />
+					<img src={Redstone} alt="Redstone Federal Credit Union Logo" />
+					<img src={Torch} alt="Torch Technologis Logo" />
+					<img src={Window} alt="Window World Logo" />
+				</div>
+				<div id="second-copy" class="logo-container">
+					<img src={Bluewood} alt="Bluewood Productions Logo" />
+					<img src={CoH} alt="City of Huntsville Logo" />
+					<img src={CvB} alt="CVB Logo" />
+					<img src={EarlyWorks} alt="Early Works Children's Museum Logo" />
+					<img src={HmO} alt="Huntsville Music Office Logo" />
+					<img src={i3} alt="i3 Logo" />
+					<img src={Jacobs} alt="Jacobs Logo" />
+					<img src={MidCity} alt="MidCity District Logo" />
+					<img src={Octo} alt="Octo Hospitality" />
+					<img src={Redstone} alt="Redstone Federal Credit Union Logo" />
+					<img src={Torch} alt="Torch Technologis Logo" />
+					<img src={Window} alt="Window World Logo" />
+				</div>
+			</div>
+		</section>
+		<script>
+			// Handle map button
+			document.addEventListener("DOMContentLoaded", () => {
+				let isMapOpen = false;
+				const scheduleContainer = document.getElementById("schedule-container");
+				const mapImage = document.getElementById("map");
+				const mapButton = document.getElementById("map-button");
+				const schedule = document.getElementById("schedule-content");
+
+				mapButton.addEventListener("click", () => {
+					if (!isMapOpen) {
+						mapButton.textContent = "Close the Map";
+						scheduleContainer.classList.add("open");
+						schedule.classList.add("shrink");
+						mapImage.classList.add("expand");
+					} else {
+						mapButton.textContent = "View the Map";
+						scheduleContainer.classList.remove("open");
+						schedule.classList.remove("shrink");
+						mapImage.classList.remove("expand");
+					}
+					isMapOpen = !isMapOpen;
+				});
+			});
+		</script>
+		<script>
+			// Handle the icons in the vendor lists
+			const vendorItems = document.querySelectorAll(".vendor-items li");
+
+			vendorItems.forEach((item) => {
+				const newLi = document.createElement("li");
+				const icon = document.createElement("i");
+				newLi.className = "kilter";
+				icon.className = "fa-sharp fa-solid fa-sparkle";
+				newLi.appendChild(icon);
+				item.after(newLi);
+			});
+		</script>
+		<script>
+			// Handle the Sponsor Logo scrolling
+			document.addEventListener("DOMContentLoaded", function () {
+				const firstCopy = document.getElementById("first-copy");
+				const secondCopy = document.getElementById("second-copy");
+
+				let scrollSpeed = 0.05;
+				let firstPos = 0;
+				let secondPos = -102;
+
+				const animateScroll = () => {
+					firstPos += scrollSpeed;
+					secondPos += scrollSpeed;
+
+					if (firstPos >= 100) {
+						firstPos = secondPos - 100;
+					}
+
+					if (secondPos >= 100) {
+						secondPos = firstPos - 100;
+					}
+
+					firstCopy.style.transform = `translateX(${firstPos}%)`;
+					secondCopy.style.transform = `translateX(${secondPos}%)`;
+
+					requestAnimationFrame(animateScroll);
+				};
+
+				const animationFrameId = requestAnimationFrame(animateScroll);
+
+				// Cleanup function to stop animation
+				window.addEventListener("unload", () => {
+					cancelAnimationFrame(animationFrameId);
+				});
+			});
+		</script>
 	</body>
 </html>
