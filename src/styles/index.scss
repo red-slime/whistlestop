@@ -466,6 +466,10 @@ main {
 
 						&.kilter {
 							margin-left: 3px;
+
+							&:last-of-type {
+								display:none;
+							}
 						}
 					}
 				}
