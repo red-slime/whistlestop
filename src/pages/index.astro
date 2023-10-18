@@ -128,7 +128,7 @@ import "../styles/index.scss";
 								class="main-content-item-button"
 								href="https://www.ticketsignup.io/TicketEvent/whistlestopweekend2023"
 								target="_blank"
-								rel="”noopener"
+								rel="noopener noreferrer"
 								noreferrer”>Purchase Pass</a
 							>
 						</div>
@@ -157,7 +157,7 @@ import "../styles/index.scss";
 								class="main-content-item-button"
 								href="https://www.ticketsignup.io/TicketEvent/whistlestopweekend2023"
 								target="_blank"
-								rel="”noopener"
+								rel="noopener noreferrer"
 								noreferrer”>Purchase Pass</a
 							>
 						</div>
@@ -182,7 +182,7 @@ import "../styles/index.scss";
 								class="main-content-item-button"
 								href="https://www.ticketsignup.io/TicketEvent/whistlestopweekend2023"
 								target="_blank"
-								rel="”noopener"
+								rel="noopener noreferrer"
 								noreferrer”>Purchase Ticket</a
 							>
 						</div>
@@ -211,7 +211,7 @@ import "../styles/index.scss";
 								class="main-content-item-button"
 								href="https://www.ticketsignup.io/TicketEvent/whistlestopweekend2023"
 								target="_blank"
-								rel="”noopener"
+								rel="noopener noreferrer"
 								noreferrer”>Purchase Ticket</a
 							>
 						</div>
@@ -229,7 +229,7 @@ import "../styles/index.scss";
 									<li>25x25 cook site *no pre-select</li>
 									<li>Access to water, ice, and electric</li>
 									<li>
-										<a href={FAQ} target="_blank" rel="noreferrer nofollow"
+										<a href={FAQ} target="_blank" rel="noopener noreferrer"
 											>Read Cooker FAQ</a
 										>
 									</li>
@@ -240,7 +240,7 @@ import "../styles/index.scss";
 								id="register-button"
 								href="https://www.ticketsignup.io/TicketEvent/whistlestopweekend2023"
 								target="_blank"
-								rel="”noopener"
+								rel="noopener noreferrer"
 								noreferrer”>Purchase Ticket</a
 							>
 						</div>
@@ -507,6 +507,26 @@ import "../styles/index.scss";
 				</div>
 			</div>
 		</section>
+
+		<script>
+			// Handle button links for the Lightbulb Buttons
+			function addLightButtonListeners() {
+				const buttons = document.querySelectorAll(".light-button");
+
+				buttons.forEach((button) => {
+					button.addEventListener("click", () => {
+						const url =
+							"https://www.ticketsignup.io/TicketEvent/whistlestopweekend2023"; // Replace with your URL
+						const newWindow = window.open(url, "_blank");
+						newWindow.opener = null;
+						newWindow.rel = "noopener noreferrer nofollow";
+					});
+				});
+			}
+
+			// Call the function to add the listeners
+			addLightButtonListeners();
+		</script>
 
 		<script>
 			// Handle map button
