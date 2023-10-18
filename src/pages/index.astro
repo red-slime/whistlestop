@@ -75,7 +75,7 @@ import "../styles/index.scss";
 	<body>
 		<header>
 			<div id="banner-button-container">
-				<div class="light-button orange" role="button">
+				<div class="light-button orange linked" role="button">
 					<div class="bordered">
 						<div class="blackround">PURCHASE TICKETS</div>
 					</div>
@@ -92,7 +92,7 @@ import "../styles/index.scss";
 				<li>Ben Loftin & The Family</li>
 				<li>Joslyn & the Sweet Compression</li>
 			</ul>
-			<div class="light-button yellow" role="button">
+			<div class="light-button yellow linked" role="button">
 				<div class="bordered">
 					<div class="blackround">TICKETS</div>
 				</div>
@@ -244,7 +244,7 @@ import "../styles/index.scss";
 								noreferrer”>Purchase Ticket</a
 							>
 						</div>
-						<div id="arrow-container" role="button">
+						<div id="arrow-container" class="linked" role="button">
 							<div id="triangle-container">
 								<div class="triangle" id="triangle-one"></div>
 								<div class="triangle" id="triangle-two"></div>
@@ -511,7 +511,7 @@ import "../styles/index.scss";
 		<script>
 			// Handle button links for the Lightbulb Buttons
 			function addLightButtonListeners() {
-				const buttons = document.querySelectorAll(".light-button");
+				const buttons = document.querySelectorAll(".linked");
 
 				buttons.forEach((button) => {
 					button.addEventListener("click", () => {
