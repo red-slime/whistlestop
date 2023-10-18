@@ -1,8 +1,10 @@
 ---
-import Logo from "../assets/whistlestop-logo.png";
+import Logo from "../assets/site/MAIN EVENT HEADER.svg";
 import LogoMobile from "../assets/whistlestop-logo-mobile.png";
 import FAQ from "../../public/WhistleStop Cooking Team FAQ 2023.pdf";
 import Map from "../assets/whistlestop-map.jpg";
+
+import sticker from "../assets/site/pig stamp.svg";
 
 import Bluewood from "../assets/logos/bluewood-productions.svg";
 import CoH from "../assets/logos/city-of-huntsville.png";
@@ -63,157 +65,199 @@ import "../styles/index.scss";
 		<!-- Google tag (gtag.js) -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-PYFST86ST2"
 		></script>
-		<script>
+		<!-- <script>
 			window.dataLayer = window.dataLayer || [];
 			function gtag() {
 				dataLayer.push(arguments);
 			}
 			gtag("js", new Date());
 			gtag("config", "G-PYFST86ST2");
-		</script>
+		</script> -->
 	</head>
 	<body>
 		<header>
+			<div id="banner-button-container">
+				<div class="light-button orange" role="button">
+					<div class="bordered">
+						<div class="blackround">PURCHASE TICKETS</div>
+					</div>
+				</div>
+			</div>
+
 			<img src={Logo} id="logo" />
-			<img src={LogoMobile} id="mobile-logo" />
-			<h1>JJ Grey and Mofro</h1>
-			<h2>
-				The Dave Anderson Project, Eric Michael Taylor, Carver Commodore, The
-				Silver Silos, The Stepdads, Ben Loftin & The Family, Joslyn & the Sweet
-				Compression
-			</h2>
+			<ul id="bands">
+				<li>The Dave Anderson Project</li>
+				<li>Eric Michael Taylor</li>
+				<li>Carver Commodore</li>
+				<li>The Silver Silos</li>
+				<li>The Stepdads</li>
+				<li>Ben Loftin & The Family</li>
+				<li>Joslyn & the Sweet Compression</li>
+			</ul>
+			<div class="light-button yellow" role="button">
+				<div class="bordered">
+					<div class="blackround">TICKETS</div>
+				</div>
+			</div>
 		</header>
 		<main>
-			<div id="main-container">
+			<div id="ticket-container">
 				<div id="main-content">
 					<div class="main-content-item">
-						<div class="main-content-item-heading blue">
-							<h2>Taste of Whistlestop</h2>
-							<i class="fa-sharp fa-solid fa-sparkle"></i>
+						<div class="main-content-item-container">
+							<div class="main-content-item-heading blue">
+								<h2 class="item-heading">Taste of Whistlestop</h2>
+								<h2 class="item-price">$125</h2>
+							</div>
+							<div class="main-content-item-text">
+								<ul>
+									<li>
+										Come enjoy a taste of WhistleStop. This special pass will
+										get you a taste of all 10 of our food vendors
+									</li>
+									<li>2 Day admission into the festival</li>
+									<li>
+										People’s Choice pulled pork tasting on Saturday from 4:00 pm
+										to 6:00 pm
+									</li>
+									<li>
+										Access to live music, market vendors, kids’ area, and
+										food/drink vendors
+									</li>
+								</ul>
+							</div>
+							<a
+								class="main-content-item-button"
+								href="https://www.ticketsignup.io/TicketEvent/whistlestopweekend2023"
+								target="_blank"
+								rel="”noopener"
+								noreferrer”>Purchase Pass</a
+							>
 						</div>
-						<div class="main-content-item-text">
-							<ul>
-								<li>
-									Come enjoy a taste of WhistleStop. This special pass will get
-									you a taste of all 10 of our food vendors
-								</li>
-								<li>2 Day admission into the festival</li>
-								<li>
-									People’s Choice pulled pork tasting on Saturday from 4:00 pm
-									to 6:00 pm
-								</li>
-								<li>
-									Access to live music, market vendors, kids’ area, and
-									food/drink vendors
-								</li>
-							</ul>
-						</div>
-						<a
-							class="main-content-item-button"
-							href="https://www.ticketsignup.io/TicketEvent/whistlestopweekend2023"
-							target="_blank"
-							rel="”noopener"
-							noreferrer”><b>Purchase Pass</b> $125</a
-						>
 					</div>
+
 					<div class="main-content-item">
-						<div class="main-content-item-heading blue">
-							<h2>Weekend Pass</h2>
-							<i class="fa-sharp fa-solid fa-sparkle"></i>
+						<div class="main-content-item-container">
+							<div class="main-content-item-heading blue">
+								<h2 class="item-heading">Weekend Pass</h2>
+								<h2 class="item-price">$35</h2>
+							</div>
+							<div class="main-content-item-text">
+								<ul>
+									<li>2 Day admission into the festival</li>
+									<li>
+										People’s Choice pulled pork tasting on Saturday from 4:00 pm
+										to 6:00 pm
+									</li>
+									<li>
+										Access to live music, market vendors, kids’ area, and
+										food/drink vendors
+									</li>
+								</ul>
+							</div>
+							<a
+								class="main-content-item-button"
+								href="https://www.ticketsignup.io/TicketEvent/whistlestopweekend2023"
+								target="_blank"
+								rel="”noopener"
+								noreferrer”>Purchase Pass</a
+							>
 						</div>
-						<div class="main-content-item-text">
-							<ul>
-								<li>2 Day admission into the festival</li>
-								<li>
-									People’s Choice pulled pork tasting on Saturday from 4:00 pm
-									to 6:00 pm
-								</li>
-								<li>
-									Access to live music, market vendors, kids’ area, and
-									food/drink vendors
-								</li>
-							</ul>
-						</div>
-						<a
-							class="main-content-item-button"
-							href="https://www.ticketsignup.io/TicketEvent/whistlestopweekend2023"
-							target="_blank"
-							rel="”noopener"
-							noreferrer”><b>Purchase Pass</b> $35</a
-						>
 					</div>
+
 					<div class="main-content-item">
-						<div class="main-content-item-heading red">
-							<h2>Friday Ticket</h2>
-							<i class="fa-sharp fa-solid fa-sparkle"></i>
+						<div class="main-content-item-container">
+							<div class="main-content-item-heading blue">
+								<h2 class="item-heading">Friday Ticket</h2>
+								<h2 class="item-price">$15</h2>
+							</div>
+							<div class="main-content-item-text">
+								<ul>
+									<li>Single Day - Friday admission only</li>
+									<li>
+										Access to live music, market vendors, kids’ area, and
+										food/drink vendors
+									</li>
+								</ul>
+							</div>
+							<a
+								class="main-content-item-button"
+								href="https://www.ticketsignup.io/TicketEvent/whistlestopweekend2023"
+								target="_blank"
+								rel="”noopener"
+								noreferrer”>Purchase Ticket</a
+							>
 						</div>
-						<div class="main-content-item-text">
-							<ul>
-								<li>Single Day - Friday admission only</li>
-								<li>
-									Access to live music, market vendors, kids’ area, and
-									food/drink vendors
-								</li>
-							</ul>
-						</div>
-						<a
-							class="main-content-item-button"
-							href="https://www.ticketsignup.io/TicketEvent/whistlestopweekend2023"
-							target="_blank"
-							rel="”noopener"
-							noreferrer”><b>Purchase Ticket</b> $15</a
-						>
 					</div>
+
 					<div class="main-content-item">
-						<div class="main-content-item-heading red">
-							<h2>Saturday Ticket</h2>
-							<i class="fa-sharp fa-solid fa-sparkle"></i>
+						<div class="main-content-item-container">
+							<div class="main-content-item-heading blue">
+								<h2 class="item-heading">Saturday Ticket</h2>
+								<h2 class="item-price">$25</h2>
+							</div>
+							<div class="main-content-item-text">
+								<ul>
+									<li>Single Day - Saturday admission only</li>
+									<li>
+										People’s Choice pulled pork tasting on Saturday from 4:00 pm
+										to 6:00 pm
+									</li>
+									<li>
+										Access to live music, market vendors, kids’ area, and
+										food/drink vendors
+									</li>
+								</ul>
+							</div>
+							<a
+								class="main-content-item-button"
+								href="https://www.ticketsignup.io/TicketEvent/whistlestopweekend2023"
+								target="_blank"
+								rel="”noopener"
+								noreferrer”>Purchase Ticket</a
+							>
 						</div>
-						<div class="main-content-item-text">
-							<ul>
-								<li>Single Day - Saturday admission only</li>
-								<li>
-									People’s Choice pulled pork tasting on Saturday from 4:00 pm
-									to 6:00 pm
-								</li>
-								<li>
-									Access to live music, market vendors, kids’ area, and
-									food/drink vendors
-								</li>
-							</ul>
-						</div>
-						<a
-							class="main-content-item-button"
-							href="https://www.ticketsignup.io/TicketEvent/whistlestopweekend2023"
-							target="_blank"
-							rel="”noopener"
-							noreferrer”><b>Purchase Ticket</b> $25</a
-						>
 					</div>
+
 					<div class="main-content-item">
-						<div class="main-content-item-heading orange">
-							<h2>Team Registration</h2>
-							<i class="fa-sharp fa-solid fa-sparkle"></i>
+						<div class="main-content-item-container" id="registration">
+							<div class="main-content-item-heading blue">
+								<h2 class="item-heading">Team Registration</h2>
+								<h2 class="item-price">$275</h2>
+							</div>
+							<div class="main-content-item-text">
+								<ul>
+									<li>Four cook team wristbands</li>
+									<li>25x25 cook site *no pre-select</li>
+									<li>Access to water, ice, and electric</li>
+									<li>
+										<a href={FAQ} target="_blank" rel="noreferrer nofollow"
+											>Read Cooker FAQ</a
+										>
+									</li>
+								</ul>
+							</div>
+							<a
+								class="main-content-item-button"
+								id="register-button"
+								href="https://www.ticketsignup.io/TicketEvent/whistlestopweekend2023"
+								target="_blank"
+								rel="”noopener"
+								noreferrer”>Purchase Ticket</a
+							>
 						</div>
-						<div class="main-content-item-text">
-							<ul>
-								<li>Four cook team wristbands</li>
-								<li>25x25 cook site *no pre-select</li>
-								<li>Access to water, ice, and electric</li>
-								<li>
-									<a href={FAQ} target="_blank" rel="noreferrer nofollow"
-										>Read Cooker FAQ</a
-									>
-								</li>
-							</ul>
+						<div id="arrow-container" role="button">
+							<div id="triangle-container">
+								<div class="triangle" id="triangle-one"></div>
+								<div class="triangle" id="triangle-two"></div>
+							</div>
+							<div id="arrow-line-container">
+								<div id="arrow-line"></div>
+							</div>
+							<span id="arrow-text"
+								>Join the <span class="orange">Waiting</span> List</span
+							>
 						</div>
-						<a
-							class="main-content-item-button"
-							href="https://www.ticketsignup.io/TicketEvent/whistlestopweekend2023"
-							target="_blank"
-							rel="”noopener"
-							noreferrer”><b>Join Waitlist</b> $275</a
-						>
 					</div>
 				</div>
 				<span class="disclaimer"
@@ -224,77 +268,96 @@ import "../styles/index.scss";
 		</main>
 		<section id="secondary-content">
 			<div id="secondary-content-container">
-				<article>
-					<p>
-						<b>WhistleStop</b>, the Rocket City BBQ Festival, has been a beloved
-						North Alabama tradition since 2001. As a primary fundraising event
-						for the EarlyWorks Children's Museum, the festival raises funds
-						allowing EarlyWorks to expand its offerings and better serve the
-						community over the years. After announcing its end last year, we are
-						excited to announce - WHISTLESTOP IS <b>BACK!</b>
-					</p>
-					<br />
-					<p>
-						<b>MidCity District</b> and locally headquartered Huntsville company,
-						<b>Integration Innovation, Inc. (i3)</b>, have joined forces to make
-						sure that WhistleStop is here to stay and comes back better than
-						EVER! We have expanded the festival grounds including 10+ local food
-						vendors offering unique options to excite your taste buds, signature
-						WhistleStop cocktails & cold beers, snack vendors such as kettle
-						corn and hot boiled peanuts, a tailgate zone to watch your favorite
-						football team, a kid zone for the little ones to run around, curated
-						market vendors, and a main stage with some INCREDIBLE music starting
-						Friday at 4pm and all day and night Saturday!
-					</p>
-				</article>
-				<div id="vendors">
-					<div id="food-vendors">
-						<div class="vendor-heading">
-							<h3>Food Vendors<span>*</span></h3>
-							<div class="line"></div>
+				<div id="article-sticker-container">
+					<img src={sticker} />
+					<div id="article-container">
+						<div id="article">
+							<div id="article-left">
+								<h2>WHISTLESTOP IS BACK</h2>
+								<p>
+									<b>WHISTLESTOP</b>, the Rocket City BBQ Festival, has been a
+									beloved North Alabama tradition since 2001. As a primary
+									fundraising event for the EarlyWorks Children's Museum, the
+									festival raises funds allowing EarlyWorks to expand its
+									offerings and better serve the community over the years. After
+									announcing its end last year, we are excited to announce -
+									WHISTLESTOP IS <b>BACK!</b>
+								</p>
+							</div>
+
+							<div id="article-right">
+								<p>
+									<b>MidCity District</b> and locally headquartered Huntsville company,
+									<b>Integration Innovation, Inc. (i3)</b>, have joined forces
+									to make sure that WhistleStop is here to stay and comes back
+									better than EVER! We have expanded the festival grounds
+									including 10+ local food vendors offering unique options to
+									excite your taste buds, signature WhistleStop cocktails & cold
+									beers, snack vendors such as kettle corn and hot boiled
+									peanuts, a tailgate zone to watch your favorite football team,
+									a kid zone for the little ones to run around, curated market
+									vendors, and a main stage with some INCREDIBLE music starting
+									Friday at 4pm and all day and night Saturday!
+								</p>
+							</div>
 						</div>
-						<ul class="vendor-items">
-							<li class="tasting">Phat Sammy's</li>
-							<li class="tasting">Goodland Pourhouse</li>
-							<li class="tasting">Fusion BBQ</li>
-							<li class="tasting">Blue Oak BBQ</li>
-							<li class="tasting">The Standard Social Market</li>
-							<li class="tasting">Long's Craft BBQ</li>
-							<li class="tasting">Tamarind Island Grill</li>
-							<li class="tasting">The Camp</li>
-							<li class="tasting">Gary's Unique Eatery</li>
-							<li class="tasting">Hickory Store Craft BBQ</li>
-							<li>Nannys Lemonade</li>
-							<li>The Nut House</li>
-							<li>Rocket City Shaved Ice</li>
-							<li>Hustle & Pop</li>
-							<li>Happy Pappi</li>
-							<li>and more</li>
-						</ul>
 					</div>
-					<div id="market-vendors">
-						<div class="vendor-heading">
-							<h3>Market Vendors</h3>
-							<div class="line"></div>
+				</div>
+				<div id="vendors-section">
+					<div id="vendors">
+						<h2>Check out our food vendors!</h2>
+						<div id="vendors-container">
+							<div id="food-vendors">
+								<div class="vendor-heading">
+									<h3>Food Vendors<span>*</span></h3>
+									<!-- <div class="line"></div> -->
+								</div>
+								<ul class="vendor-items">
+									<li class="tasting">Phat Sammy's</li>
+									<li class="tasting">Goodland Pourhouse</li>
+									<li class="tasting">Fusion BBQ</li>
+									<li class="tasting">Blue Oak BBQ</li>
+									<li class="tasting">The Standard Social Market</li>
+									<li class="tasting">Long's Craft BBQ</li>
+									<li class="tasting">Tamarind Island Grill</li>
+									<li class="tasting">The Camp</li>
+									<li class="tasting">Gary's Unique Eatery</li>
+									<li class="tasting">Hickory Store Craft BBQ</li>
+									<li>Nannys Lemonade</li>
+									<li>The Nut House</li>
+									<li>Rocket City Shaved Ice</li>
+									<li>Hustle & Pop</li>
+									<li>Happy Pappi</li>
+									<li>and more</li>
+								</ul>
+							</div>
+							<div id="market-vendors">
+								<div class="vendor-heading">
+									<h3>Market Vendors</h3>
+									<!-- <div class="line"></div> -->
+								</div>
+								<ul class="vendor-items">
+									<li>Fortenberry Farms</li>
+									<li>Furry Hippie Beard Co.</li>
+									<li>Backwoods Market Garden</li>
+									<li>Toasted Pineapple</li>
+									<li>Luna Moth</li>
+									<li>Scott Honey Farms 7 Organics</li>
+									<li>Pitmaster BBQ Supply</li>
+									<li>Sauce Daddy</li>
+									<li>and more</li>
+								</ul>
+							</div>
 						</div>
-						<ul class="vendor-items">
-							<li>Fortenberry Farms</li>
-							<li>Furry Hippie Beard Co.</li>
-							<li>Backwoods Market Garden</li>
-							<li>Toasted Pineapple</li>
-							<li>Luna Moth</li>
-							<li>Scott Honey Farms 7 Organics</li>
-							<li>Pitmaster BBQ Supply</li>
-							<li>Sauce Daddy</li>
-							<li>and more</li>
-						</ul>
+
+						<span class="disclaimer"
+							>*Vendors in orange are part of the Tasting Ticket experience</span
+						>
 					</div>
-					<span class="disclaimer"
-						>*Vendors in orange are part of the Tasting Ticket experience</span
-					>
 				</div>
 			</div>
 		</section>
+
 		<section id="schedule">
 			<div id="schedule-container">
 				<div id="map">
@@ -306,9 +369,10 @@ import "../styles/index.scss";
 					<div class="schedule-block">
 						<div class="schedule-times">
 							<h3>
-								Oct 20 <i class="fa-sharp fa-solid fa-sparkle"></i> Friday
+								Oct 20 FRIDAY <i class="fa-sharp fa-solid fa-sparkle"></i> GATES
+								OPEN AT 4:00 PM
 							</h3>
-							<span>Gates Open at 4:00 PM</span>
+							<!-- <span>Gates Open at 4:00 PM</span> -->
 						</div>
 						<ul class="event-times">
 							<li>
@@ -332,9 +396,10 @@ import "../styles/index.scss";
 					<div class="schedule-block">
 						<div class="schedule-times">
 							<h3>
-								Oct 21 <i class="fa-sharp fa-solid fa-sparkle"></i> Saturday
+								Oct 21 Saturday <i class="fa-sharp fa-solid fa-sparkle"></i> Gates
+								open at 11:00 am
 							</h3>
-							<span>Gates Open at 11:00 AM</span>
+							<!-- <span>Gates Open at 11:00 AM</span> -->
 						</div>
 						<ul class="event-times">
 							<li class="heavy">
@@ -379,6 +444,7 @@ import "../styles/index.scss";
 				</div>
 			</div>
 		</section>
+
 		<footer>
 			<div id="contact">
 				<h3 id="questions">
@@ -392,10 +458,11 @@ import "../styles/index.scss";
 					target="_blank"
 					rel="noopener noreferrer"
 				>
-					Follow Us for Updates <i class="fa-brands fa-square-facebook"></i>
+					Follow Us for Updates <i class="fa-brands fa-facebook"></i>
 				</a>
 			</div>
 		</footer>
+
 		<section id="sponsors">
 			<div id="sponsors-container">
 				<div id="first-copy" class="logo-container">
@@ -442,6 +509,7 @@ import "../styles/index.scss";
 				</div>
 			</div>
 		</section>
+
 		<script>
 			// Handle map button
 			document.addEventListener("DOMContentLoaded", () => {
@@ -470,6 +538,7 @@ import "../styles/index.scss";
 		<script>
 			// Handle the icons in the vendor lists
 			const vendorItems = document.querySelectorAll(".vendor-items li");
+			const bandItems = document.querySelectorAll("#bands li");
 
 			vendorItems.forEach((item) => {
 				const newLi = document.createElement("li");
@@ -478,6 +547,15 @@ import "../styles/index.scss";
 				icon.className = "fa-sharp fa-solid fa-sparkle";
 				newLi.appendChild(icon);
 				item.after(newLi);
+			});
+
+			bandItems.forEach((item) => {
+				const newBandLi = document.createElement("li");
+				const bandIcon = document.createElement("i");
+				newBandLi.className = "kilter";
+				bandIcon.className = "fa-sharp fa-solid fa-sparkle";
+				newBandLi.appendChild(bandIcon);
+				item.after(newBandLi);
 			});
 		</script>
 		<script>
