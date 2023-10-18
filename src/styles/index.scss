@@ -188,14 +188,6 @@ header {
 	background-position: top center, center center;
 	background-repeat: no-repeat, no-repeat;
 
-	// @include respond-to($tablet) {
-	// 	padding: 40px 0;
-	// }
-
-	// @include respond-to($mobile) {
-	// 	background-image: linear-gradient(to bottom, #f0e9d7 10%, #f34601 10%);
-	// }
-
 	#banner-button-container {
 		width: clamp(1150px, 70vw, 70vw);
 		margin: 0 auto;
@@ -224,14 +216,6 @@ header {
 		}
 	}
 
-	// #mobile-logo {
-	// 	display: none;
-	// 	@include respond-to($tablet) {
-	// 		display: block;
-	// 		width: 100%;
-	// 	}
-	// }
-
 	#bands {
 		width: 70vw;
 		list-style-type: none;
@@ -241,6 +225,10 @@ header {
 		@include respond-to($tablet) {
 			display: flex;
 			flex-direction: column;
+		}
+
+		@include respond-to($tablet) {
+			width: 100%;
 		}
 
 		li {
@@ -254,7 +242,7 @@ header {
 			}
 
 			@include respond-to($mobile) {
-				font-size: clamp(30px, 3vw, 4vw);
+				font-size: 7vw;
 			}
 
 			// i {
@@ -299,11 +287,11 @@ main {
 	&::before {
 		content: "";
 		position: absolute;
-		top: 50%;
+		top: 40px;
 		left: 50%;
-		transform: translate(-50%, -50%);
+		transform: translate(-50%);
 		width: 95%;
-		height: 90%;
+		height: 82%;
 		background: url("../assets/site/texture.svg");
 
 		@include respond-to($tablet) {
@@ -323,7 +311,7 @@ main {
 		}
 
 		@include respond-to($tablet) {
-			width: clamp(calc(320px - 40px), 100%, 100%); // handle padding;
+			width: clamp(calc(320px - 40px), 100%, 100%);
 		}
 
 		#main-content {
@@ -371,6 +359,10 @@ main {
 					@include respond-to($tablet) {
 						display: flex;
 						padding: 30px 30px 60px 30px;
+						background: url("../assets/site/plank.png");
+						background-size: 100% 100%;
+						background-position: top left;
+						background-repeat: no-repeat;
 					}
 				}
 
@@ -498,38 +490,84 @@ main {
 					box-shadow: -8px 14px 0 rgba(5, 2, 0, 0.5);
 
 					.main-content-item-heading {
+						position: relative;
 						display: flex;
 						justify-content: space-between;
-						align-items: center;
+						align-items: flex-start;
 						margin-bottom: 10px;
-						//padding: 1vw 1vw 0 1vw;
-						//border-bottom: 2px solid $black;
-
-						@include respond-to($tablet) {
-							//padding: 2vw;
-						}
+						gap: 10px;
 
 						@include respond-to($mobile) {
-							//padding: 4vw;
+							align-items: center;
 						}
 
 						.item-heading,
 						.item-price {
 							font-family: $milk;
-							font-size: clamp(20px, 1.3vw, 1.3vw);
+							font-size: clamp(26px, 1.4vw, 1.4vw);
 							color: $black;
 
+							@include respond-to(1200px) {
+								font-size: clamp(26px, 2.2vw, 2.2vw);
+							}
+
 							@include respond-to($tablet) {
-								font-size: 4vw;
+								font-size: clamp(26px, 4vw, 4vw);
 								margin-bottom: 10px;
 							}
 
 							@include respond-to($mobile) {
-								font-size: clamp(16px, 5vw, 5vw);
+								font-size: clamp(30px, 5vw, 5vw);
+							}
+
+							@include respond-to(370px) {
+								font-size: 8vw;
+							}
+						}
+						.item-heading {
+							@include respond-to($mobile) {
+								width: 70%;
+								margin-top: 20px;
+							}
+
+							@include respond-to(380px) {
+								width: 82%;
 							}
 						}
 						.item-price {
 							color: $oorange;
+
+							@include respond-to($mobile) {
+								background: linear-gradient(
+									-135deg,
+									$yyellow 0%,
+									#ffe785 35%,
+									#fff1b8 45%,
+									$yyellow 55%,
+									#fff1b8 90%,
+									#eaba00 100%
+								);
+								color: $black;
+								text-shadow: -1px 1px #fff1b8;
+								display: flex;
+								align-items: center;
+								justify-content: center;
+								position: absolute;
+								top: -50px;
+								right: -50px;
+								width: 100px;
+								height: 100px;
+								border-radius: 100px;
+								transform: rotate(10deg);
+								border-width: 5px;
+								border-style: solid;
+								border-color: $yyellow;
+								border-bottom-color: #eaba00;
+								border-top-color: #fff1b8;
+								border-right-color: #ffe785;
+								box-shadow: -2px 4px 0 rgba(5, 2, 0, 0.5);
+								font-size: 30px;
+							}
 						}
 					}
 
@@ -537,32 +575,12 @@ main {
 						flex-grow: 1;
 						flex-shrink: 0;
 
-						@include respond-to(1200px) {
-							//padding: 2vw;
-						}
-
-						@include respond-to($tablet) {
-							//padding: 4vw 2vw;
-						}
-
-						@include respond-to($mobile) {
-							//padding: 6vw;
-						}
-
 						ul {
 							display: flex;
 							flex-direction: column;
 							list-style-type: disc;
 							list-style-position: inside;
 							gap: 1vw;
-
-							// @include respond-to($tablet) {
-							// 	gap: 2vw;
-							// }
-
-							// @include respond-to($tablet) {
-							// 	gap: 4vw;
-							// }
 
 							a {
 								color: $black;
@@ -694,6 +712,7 @@ main {
 
 				@include respond-to($mobile) {
 					box-shadow: none;
+					border: 4px solid #fddeff;
 				}
 
 				#article {
@@ -746,6 +765,14 @@ main {
 							@include respond-to(380px) {
 								font-size: 32px;
 							}
+
+							.break {
+								display: none;
+
+								@include respond-to(620px) {
+									display: inline;
+								}
+							}
 						}
 					}
 
@@ -792,7 +819,7 @@ main {
 					}
 
 					@include respond-to(920px) {
-						font-size: 4vw;
+						font-size: clamp(32px, 4vw, 4vw);
 					}
 
 					@include respond-to($mobile) {
@@ -870,6 +897,7 @@ main {
 								font-weight: 700;
 								color: $ttan;
 								font-size: 20px;
+								text-shadow: 1px 1px solid white;
 
 								@include respond-to($tablet) {
 									line-height: 2;
@@ -921,8 +949,9 @@ main {
 		left: 50%;
 		transform: translate(-50%, -50%);
 		width: 95%;
-		height: 90%;
-		background: url("../assets/site/texture.svg");
+		height: 95%;
+		background: url("../assets/site/texture-dark.svg");
+		background-size: cover;
 
 		@include respond-to($tablet) {
 			width: 100%;
