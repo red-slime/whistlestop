@@ -197,14 +197,6 @@ header {
 		padding-bottom: 120px;
 	}
 
-	// @include respond-to(500px) {
-	// 	padding-bottom: 160px;
-	// }
-
-	// @include respond-to(500px) {
-	// 	padding-bottom: 160px;
-	// }
-
 	#banner-button-container {
 		width: clamp(1150px, 70vw, 70vw);
 		margin: 0 auto;
@@ -261,11 +253,6 @@ header {
 			@include respond-to($mobile) {
 				font-size: 7vw;
 			}
-
-			// i {
-			// 	display: inline;
-			// 	font-size: 10px;
-			// }
 
 			&.kilter {
 				align-items: center;
@@ -662,6 +649,7 @@ main {
 	padding-top: 0;
 	padding-bottom: 0;
 	background: $ppink;
+	display: none;
 
 	@include respond-to(380px) {
 		padding: 20px 5px;
@@ -1019,6 +1007,7 @@ main {
 	position: relative;
 	padding: 20px;
 	background: $bblue;
+	display: none;
 
 	@include respond-to($tablet) {
 		padding-top: 60px;
@@ -1324,6 +1313,7 @@ main {
 	position: relative;
 	padding: clamp(40px, 3vw, 3vw) clamp(20px, 2vw, 2vw);
 	background: $ttan;
+	display: none;
 
 	&::before {
 		content: "";
