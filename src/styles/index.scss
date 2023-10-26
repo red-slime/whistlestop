@@ -33,7 +33,9 @@ $yyellow: #ffcc04;
 $bbrown: #351403;
 $ttan: #612300;
 $oorange: #ef4b24;
+$ooranger: #ff7200;
 $ppink: #ee8892;
+$vvanilla: #fffef4;
 
 // Fonts
 
@@ -141,6 +143,9 @@ html {
 
 	&.yellow {
 		background: $yyellow;
+		visibility: hidden;
+		overflow: hidden;
+		height: 20px;
 	}
 
 	&.orange {
@@ -187,6 +192,18 @@ header {
 	background-size: cover, cover;
 	background-position: top center, center center;
 	background-repeat: no-repeat, no-repeat;
+
+	@include respond-to($tablet) {
+		padding-bottom: 120px;
+	}
+
+	// @include respond-to(500px) {
+	// 	padding-bottom: 160px;
+	// }
+
+	// @include respond-to(500px) {
+	// 	padding-bottom: 160px;
+	// }
 
 	#banner-button-container {
 		width: clamp(1150px, 70vw, 70vw);
@@ -273,6 +290,372 @@ header {
 	}
 }
 
+#winner-container {
+	position: relative;
+	padding: clamp(40px, 3vw, 3vw) clamp(20px, 2vw, 2vw);
+	background: $ooranger;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 95%;
+		height: 85%;
+		background: url("../assets/site/texture-dark.svg");
+		background-repeat: none;
+		background-size: cover;
+
+		@include respond-to($tablet) {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	@include respond-to($tablet) {
+		padding: 20px;
+		padding-bottom: 40px;
+	}
+
+	@include respond-to(380px) {
+		padding: 0 10px 40px 10px;
+	}
+
+	#winner-content {
+		position: relative;
+		width: clamp(1150px, 60vw, 60vw);
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		row-gap: 20px;
+		padding: 30px 30px;
+		padding-top: 70px;
+		background: $vvanilla;
+		border: 20px solid $black;
+		border-radius: 20px;
+
+		@include respond-to(1200px) {
+			padding: 20px;
+			padding-top: 70px;
+			width: 100%;
+		}
+
+		@include respond-to($tablet) {
+			grid-template-columns: 1fr;
+			grid-template-rows: auto auto auto;
+		}
+
+		@include respond-to(500px) {
+			padding-top: 20px;
+		}
+
+		#crown {
+			position: absolute;
+			top: -200px;
+			left: 50%;
+			transform: translateX(-50%);
+
+			@include respond-to(500px) {
+				width: 100%;
+				top: 0;
+				display: none;
+			}
+		}
+
+		#mobile-crown-container {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 1px;
+
+			#crown-mobile {
+				position: absolute;
+				display: none;
+
+				@include respond-to(500px) {
+					width: 100%;
+					display: block;
+					bottom: 0;
+				}
+			}
+
+			// @include respond-to(500px) {
+			// 	width: 100%;
+			// 	display: block;
+			// 	top: 0;
+			// }
+		}
+
+		#champions {
+			grid-column: 1 / 2;
+			grid-row: 1 / 2;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+
+			@include respond-to($tablet) {
+				grid-column: 1 / 2;
+				grid-row: 1 / 2;
+				align-items: center;
+				gap: 20px;
+				margin-bottom: 20px;
+			}
+
+			.champion {
+				span {
+					font-family: $suha;
+					font-size: clamp(28.8px, 1.5vw, 1.5vw);
+					color: $ooranger;
+				}
+				h3 {
+					font-family: $suha;
+					font-size: clamp(38.4px, 2vw, 2vw);
+					color: $black;
+				}
+				@include respond-to($tablet) {
+					text-align: center;
+				}
+			}
+		}
+
+		#button-logo-container {
+			grid-column: 1 / 2;
+			grid-row: 2 / 3;
+			height: auto;
+			display: flex;
+			align-items: center;
+			gap: 20px;
+			background: $black;
+			padding: 10px;
+
+			@include respond-to($tablet) {
+				grid-column: 1 / 2;
+				grid-row: 3 / 4;
+				gap: 10px;
+			}
+
+			@include respond-to($mobile) {
+				display: flex;
+				flex-direction: column-reverse;
+			}
+
+			img {
+				display: block;
+				width: auto;
+				height: 100%;
+				max-height: 142px;
+
+				@include respond-to($tablet) {
+					height: clamp(86px, 20vw, 20vw);
+				}
+
+				@include respond-to($mobile) {
+					height: auto;
+					width: 100%;
+				}
+			}
+
+			a {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				width: auto;
+				width: 100%;
+				height: 80%;
+				border-style: solid;
+				border-color: $vvanilla;
+				border-width: 0;
+				border-top-width: 10px;
+				border-bottom-width: 10px;
+				text-decoration: none;
+				padding-top: clamp(8px, 0.5vw, 0.5vw);
+
+				@include respond-to($mobile) {
+					padding: 8px 0 4px 0;
+				}
+
+				span {
+					font-family: $suha;
+					color: $white;
+					display: block;
+					line-height: 0.9;
+
+					span {
+						display: inline;
+						color: $ooranger;
+					}
+
+					&:last-of-type {
+						font-size: clamp(44.7333px, 2.33vw, 2.33vw);
+
+						@include respond-to(1200px) {
+							font-size: 3.5vw;
+						}
+
+						@include respond-to(1000px) {
+							font-size: 3.1vw;
+						}
+
+						@include respond-to(830px) {
+							font-size: 2.8vw;
+						}
+
+						@include respond-to($tablet) {
+							font-size: 6vw;
+						}
+
+						@include respond-to($mobile) {
+							font-size: 7vw;
+						}
+					}
+
+					&:first-of-type {
+						font-size: clamp(30.7167px, 1.6vw, 1.6vw);
+
+						@include respond-to(1200px) {
+							font-size: 2.3vw;
+						}
+
+						@include respond-to(1000px) {
+							font-size: 2.1vw;
+						}
+
+						@include respond-to(830px) {
+							font-size: 1.9vw;
+						}
+
+						@include respond-to($tablet) {
+							font-size: 3.7vw;
+						}
+
+						@include respond-to($mobile) {
+							font-size: 4.5vw;
+						}
+					}
+				}
+			}
+		}
+
+		#place-container {
+			grid-column: 2 / 3;
+			grid-row: 1 / 3;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			margin-left: 40px;
+
+			@include respond-to(1200px) {
+				justify-content: flex-start;
+				gap: 20px;
+			}
+
+			@include respond-to($tablet) {
+				grid-column: 1 / 2;
+				grid-row: 2 / 3;
+				margin-left: 0;
+			}
+
+			#ribs,
+			#chicken {
+				@include respond-to($tablet) {
+					width: 100%;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					margin-bottom: 20px;
+				}
+				span {
+					font-family: $suha;
+					font-size: clamp(28.8px, 1.5vw, 1.5vw);
+					color: $ooranger;
+
+					@include respond-to($tablet) {
+						font-size: 36px;
+					}
+
+					@include respond-to($mobile) {
+						margin-bottom: 10px;
+						font-size: 40px;
+					}
+				}
+
+				ul {
+					list-style-type: none;
+					list-style-position: inside;
+					display: flex;
+					flex-direction: column;
+
+					@include respond-to($tablet) {
+						gap: clamp(10px, 1vw, 8vw);
+					}
+
+					@include respond-to($mobile) {
+						gap: 20px;
+					}
+
+					li {
+						display: flex;
+						gap: clamp(15px, 1.2vw, 1.2vw);
+
+						@include respond-to($tablet) {
+							justify-content: space-between;
+							column-gap: 40px;
+						}
+
+						@include respond-to($mobile) {
+							flex-direction: column;
+							gap: 3px;
+							align-items: center;
+						}
+
+						p {
+							font-family: $suha;
+							color: $black;
+							font-size: clamp(28.8px, 1.5vw, 1.5vw);
+
+							@include respond-to(1200px) {
+								font-size: 2.5vw;
+							}
+
+							@include respond-to($tablet) {
+								font-size: clamp(5vw, 5vw, 2px);
+							}
+
+							@include respond-to($mobile) {
+								font-size: 30px;
+								text-align: center;
+							}
+
+							&:first-of-type {
+								width: 30%;
+								font-family: $suha;
+
+								@include respond-to($tablet) {
+									width: auto;
+								}
+
+								@include respond-to($mobile) {
+									font-size: 20px;
+								}
+							}
+
+							&:last-of-type {
+								@include respond-to($mobile) {
+									line-height: 0.8;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
 main {
 	position: relative;
 	padding: clamp(40px, 3vw, 3vw) clamp(20px, 2vw, 2vw);
@@ -304,7 +687,7 @@ main {
 		position: relative;
 		width: clamp(1150px, 60vw, 60vw);
 		margin: 0 auto;
-		transform: translateY(-50px);
+		transform: translateY(-20px);
 
 		@include respond-to(1200px) {
 			width: clamp(728px, 100%, 100%);

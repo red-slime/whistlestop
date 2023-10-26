@@ -3,6 +3,8 @@ import Logo from "../assets/site/MAIN EVENT HEADER.svg";
 import FAQ from "../../public/WhistleStop Cooking Team FAQ 2023.pdf";
 import Map from "../assets/whistlestop-map.jpg";
 import sticker from "../assets/site/pig stamp.svg";
+import crown from "../assets/site/SUN.svg";
+import KCBS from "../assets/site/KCBS.svg";
 
 import Bluewood from "../assets/logos/bluewood-productions.svg";
 import CoH from "../assets/logos/city-of-huntsville.png";
@@ -74,13 +76,13 @@ import "../styles/index.scss";
 	</head>
 	<body>
 		<header>
-			<div id="banner-button-container">
+			<!-- <div id="banner-button-container">
 				<div class="light-button orange linked" role="button">
 					<div class="bordered">
 						<div class="blackround">PURCHASE TICKETS</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 
 			<img src={Logo} id="logo" />
 			<ul id="bands">
@@ -98,6 +100,71 @@ import "../styles/index.scss";
 				</div>
 			</div>
 		</header>
+		<div id="winner-container">
+			<div id="winner-content">
+				<div id="champions">
+					<div class="champion">
+						<span>Grand Champion</span>
+						<h3>Hickory Hangover</h3>
+					</div>
+					<div class="champion">
+						<span>Reserve Grand Champion</span>
+						<h3>Deviant Smoke</h3>
+					</div>
+				</div>
+				<div id="button-logo-container">
+					<img src={KCBS} alt="Kansas City BBQ Society" />
+					<a
+						href="https://mms.kcbs.us/members/evr/view_scores.php?org_id=KCBA&evid=45623049"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<span>Click to see the <span>whole hog</span></span>
+						<span>of overall scores</span>
+					</a>
+				</div>
+				<div id="place-container">
+					<div id="ribs">
+						<span>RIBS</span>
+						<ul>
+							<li>
+								<p>1st Place</p>
+								<p>Just For Fun BBQ</p>
+							</li>
+							<li>
+								<p>2nd Place</p>
+								<p>Red, White & Que</p>
+							</li>
+							<li>
+								<p>3rd Place</p>
+								<p>Deviant Smoke</p>
+							</li>
+						</ul>
+					</div>
+					<div id="chicken">
+						<span>CHICKEN</span>
+						<ul>
+							<li>
+								<p>1st Place</p>
+								<p>Hickory Hangover</p>
+							</li>
+							<li>
+								<p>2nd Place</p>
+								<p>Limp Brizkit</p>
+							</li>
+							<li>
+								<p>3rd Place</p>
+								<p>Mad Rocket</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<img src={crown} alt="Whistlestop 2023 Winners" id="crown" />
+				<div id="mobile-crown-container">
+					<img src={crown} alt="Whistlestop 2023 Winners" id="crown-mobile" />
+				</div>
+			</div>
+		</div>
 		<main>
 			<div id="ticket-container">
 				<div id="main-content">
